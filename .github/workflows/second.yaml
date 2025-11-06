@@ -11,6 +11,5 @@ jobs:
       - name: Run a one-line script
         run: |
           pwd
-          cd ..
           chmod 775 ls-script.sh
           ./ls-script.sh
