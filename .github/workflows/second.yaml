@@ -10,8 +10,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Run a one-line script
         run: |
-          echo $pwd
-          cd ..
+          pwd
           cd ..
           chmod 775 ls-script.sh
-          sh ls-script.sh
+          ./ls-script.sh
