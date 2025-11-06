@@ -7,4 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: echo $pwd
+        run: |
+          echo $pwd
+          cd ..
+          cd ..
+          chmod 775 ls-script.sh
+          sh ls-script.sh
