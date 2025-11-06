@@ -6,6 +6,8 @@ jobs:
   list:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
       - name: Run a one-line script
         run: |
           echo $pwd
